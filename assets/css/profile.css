@@ -1,0 +1,50 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 520px;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar-placeholder {
+  width: 76px;
+  height: 76px;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.05);
+  font-size: 32px;
+}
+
+#profileName {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+#profileEmail {
+  color: var(--text-faint);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .profile-page { padding: 18px 0; }
+  .auth-card { padding: 22px; }
+}

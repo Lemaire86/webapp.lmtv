@@ -1,0 +1,74 @@
+.radio-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.radio-art {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, var(--red), var(--purple), var(--blue), var(--red));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: spin 6s linear infinite;
+}
+
+.radio-art::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.radio-stage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: center;
+  padding: 26px 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: linear-gradient(120deg, #12081f, #05060d 72%);
+}
+
+.radio-now {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.radio-now #radioStationName {
+  font-family: 'Outfit';
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.radio-stage audio {
+  width: 100%;
+  max-width: 420px;
+}
+
+.radio-status {
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.radio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .radio-stage { padding: 20px; gap: 14px; }
+  .radio-art { width: 76px; height: 76px; }
+  .radio-stage audio { max-width: 100%; }
+}

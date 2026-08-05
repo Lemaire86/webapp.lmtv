@@ -1,0 +1,46 @@
+.player-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.player-channel-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 0;
+}
+
+.player-channel-meta img {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+}
+
+.player-channel-meta .channel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.player-channel-meta .channel-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.player-channel-meta .channel-subtitle {
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.player-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .player-channel-meta { flex-direction: column; align-items: flex-start; }
+}

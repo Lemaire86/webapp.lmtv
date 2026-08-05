@@ -1,0 +1,65 @@
+.topbar-brand {
+  position: relative;
+  left: auto;
+  transform: none;
+  margin: 0 auto;
+}
+
+.hero-dots button {
+  cursor: pointer;
+}
+
+.hero-dots button:hover {
+  width: 18px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    justify-content: space-between;
+  }
+  .topbar-brand {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+  .search-shell-wrap {
+    display: none;
+  }
+}
+
+.search-results-dropdown {
+  max-height: 50vh;
+}
+
+.section-head h2 {
+  font-size: 15px;
+}
+
+.section-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 28px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.section-empty-state p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.section-empty-state .pill-btn {
+  width: auto;
+}
+
+#replaySection,
+#favorisSection {
+  padding-top: 24px;
+}
